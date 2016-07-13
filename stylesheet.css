@@ -51,13 +51,99 @@ header p {
   color: #fff;
 }
 
+
+
+
+.jumbotronCategories{
+  display: flex;
+  align-items: center;
+  background-image: url('GardenFurnitureImages/Flowers-Garden-Wallpaper.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.jumbotronCategories h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000;
+
+}
+
+.jumbotronCategories h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.jumbotronTools{
+  display: flex;
+  align-items: center;
+  background-image: url('ToolImages/Banners.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.jumbotronTools h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000;
+
+}
+
+.jumbotronTools h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+
+
 section .row img {
   margin: 0 0 30px;
   width: 100%;
 }
 
+#product{
+
+	padding-bottom: 40px;
+}
+
 .col-md-6 {
   margin: 0 0 30px;
+}
+.addBasket{
+   border-radius: 2px;
+  border: 1px solid black;
+  color: #black;
+  text-shadow: none;
+  background-color: #ff9900;
+	margin-left: 85px;
+	padding: 2px 6px 2px 6px;
+	text-decoration: none;
+	box-shadow: 0 3px #999;
+}
+
+.addBasket:hover{
+transition: 0.5s;
+background-color: #ffb84d;
+text-decoration: none;
+
+}
+
+.addBasket:active{
+	box-shadow: none;
+transform: translateY(4px);
+text-decoration: none;
 }
 
 .btn.btn-primary {
@@ -110,6 +196,11 @@ footer li img {
 .stylish-input-group button{
     border:0;
     background:transparent;
+  
+}
+.stylish-input-group button:active{
+
+    transform: translateY(4px);
 }
 
 #navbar{
@@ -133,3 +224,51 @@ footer li img {
 	margin-bottom: -20px;
 }
 
+.button-nav{
+		padding: 0px 5px;
+	margin-top:10px;
+	padding-top: 10px;
+	padding-bottom: -20px;
+	margin-bottom: -20px;
+	font-weight: bold;
+	text-decoration: none;
+	color:black;
+
+}
+
+.button-nav:hover{
+
+border-top: 2px solid brown;
+margin-top:1px;
+transition: 0s;
+}
+.button-nav:active{
+
+  transform: translateY(4px);
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+
+a:after{
+
+	text-decoration: none;
+}
+
+.price{
+
+	font-weight: bold;
+}
+
+
+
+
+
+	
