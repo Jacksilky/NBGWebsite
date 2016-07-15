@@ -121,23 +121,63 @@ section .row img {
 .col-md-6 {
   margin: 0 0 30px;
 }
+
+#pvadd{
+  margin-top: 8px;
+padding: 10px 20px 10px 20px;
+float:right;
+font-weight: bold;
+
+}
+
+#pvprice{
+  margin-top: 10px;
+  float:left;
+  font-size: 30px;
+}
+
 .addBasket{
+  float: right;
    border-radius: 2px;
   border: 1px solid black;
-  color: #black;
+  color: black;
   text-shadow: none;
   background-color: #ff9900;
 	margin-left: 85px;
-	padding: 2px 6px 2px 6px;
+	padding: 0px 6px 0px 6px;
 	text-decoration: none;
 	box-shadow: 0 3px #999;
 }
+
+
+
+.green{
+  
+  padding: 0px 22px 0px 22px;
+  background-color: #00b300;
+  text-decoration: none;
+}
+
+
+.green:hover{
+
+  transition: 0.5s;
+background-color: #00e600;
+text-decoration: none;
+
+}
+
 
 .addBasket:hover{
 transition: 0.5s;
 background-color: #ffb84d;
 text-decoration: none;
 
+}
+
+button{
+
+  text-decoration: none;
 }
 
 .addBasket:active{
@@ -184,6 +224,44 @@ footer li img {
   height: 32px;
 }
 
+.none{
+transition: 0.5s;
+  list-style: none;
+}
+
+.ptitle{
+  font-size: 20px;
+}
+
+.badge {
+  transition: 0.5s;
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  background-color: brown;
+}
+
+#ProductView{
+margin-left: 30px;
+
+
+}
+
+#description{
+
+margin-top: 38px;
+margin-left: 50px;
+  width: 450px;
+  
+  border: 1px solid black;
+
+  background-color: #ffffcc;
+}
+
+
+
 
 .stylish-input-group .input-group-addon{
     background: white !important; 
@@ -207,12 +285,22 @@ footer li img {
 	padding-top: 20px;
 }
 
-#account{
+.dropdown-toggle{
 	padding-top: 10px;
 	padding-right: 25px;
+  padding-left: 10px;
 }
 
-#basket{
+.dropdown{
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-left: 10px;
+  list-style: none;
+  list-style-type: none;
+}
+
+
+.basket{
 	padding-top: 10px;
 	
 }
@@ -266,6 +354,10 @@ a:after{
 
 	font-weight: bold;
 }
+
+
+
+
 
 
 

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 
@@ -31,9 +32,21 @@
     </div>
 
     <nav class="col-sm-8 text-right">
-
-      <p id="account">Account</p>
-      <p id="basket">Basket</p>
+ <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Account<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Special Offers</a></li>
+              <li><a href="#">Messages</a></li>
+            </ul>
+          </li>
+          <li class="none">
+           <li class="none"> <p class="basket">Basket</p></li>
+          <li class="none"><p class="basketcounter"></p></li>
+         
+      </li>
     </nav>
   </div>
   <div class="row">
@@ -95,7 +108,7 @@
         <img src="ToolImages/Chain.jpg"/>
         </a>
         <p style="display: inline" class="price"> Price: £199 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'>
         
       </figure>
     
@@ -108,7 +121,7 @@
      </a>
 
          <p style="display: inline" class="price"> Price: £799 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'>
    </div>
 
    <figure class="col-sm-3">
@@ -120,7 +133,7 @@
   </a>
 
       <p style="display: inline" class="price"> Price: £189 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'>
 </figure>
 
 <figure class="col-sm-3">
@@ -132,7 +145,7 @@
    </a>
 
        <p style="display: inline" class="price"> Price : £25 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'>
  </figure>
 </div>
 
@@ -154,7 +167,7 @@
      <img src="ToolImages/RoboLawn.jpg"/>
    </a>
     <p style="display: inline" class="price"> Price: £129 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'>
 
  </figure>
  <figure class="col-sm-3">
@@ -166,7 +179,7 @@
  </a>
 
      <p style="display: inline" class="price"> Price : £79 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a></figure>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'></figure>
 <figure class="col-sm-3">
   <a href="HotTub.html">
    <p>
@@ -176,7 +189,7 @@
  </a>
 
      <p style="display: inline" class="price"> Price: £119 </p>
-       <a style="display: inline" class="addBasket" href="#" rolle="button">Add to Basket</a>
+       <input style="display: inline" type='button' value='Add to Basket' class='addBasket'>
 </figure>
 <figure class="col-sm-3">
   <a href="HotTub.html">
@@ -213,6 +226,7 @@
   </div>
 </footer>
 
+<script src="app.js"></script>
 
 </body>
 </html>
