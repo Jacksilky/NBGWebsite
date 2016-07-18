@@ -229,7 +229,7 @@ transition: 0.5s;
   list-style: none;
 }
 
-.ptitle{
+#ptitle{
   font-size: 20px;
 }
 
@@ -353,6 +353,111 @@ a:after{
 .price{
 
 	font-weight: bold;
+}
+
+.rcontainer{
+margin-top: 30px;
+
+width: 800px;
+
+
+}
+
+.postbutton{
+
+  margin-bottom: 20px;
+}
+
+
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.posts li {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 42px;
+}
+
+.posty{
+
+ float: right;
+   border-radius: 2px;
+  border: 1px solid black;
+  color: black;
+  text-shadow: none;
+  background-color: #ff9900;
+  margin-left: 85px;
+  padding: 0px 6px 0px 6px;
+  text-decoration: none;
+  box-shadow: 0 3px #999;
+
+}
+
+.posty:active{
+
+box-shadow: none;
+transform: translateY(4px);
+text-decoration: none;
+
+}
+
+
+.menu {
+  background: #202024 url('https://s-media-cache-ak0.pinimg.com/564x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg') repeat left top;
+  right: -285px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 285px;
+  z-index:1;
+}
+
+
+.menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Bheader{
+
+  position: relative;
+  padding-left: 110px;
+  color: black;
+  text-decoration: underline;
+}
+
+.icon-close{
+
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 

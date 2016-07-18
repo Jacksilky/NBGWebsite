@@ -23,6 +23,9 @@ var main = function() {
 
   $('.addBasket').click(function(){
 
+    var basketProduct = $(this).siblings('.PTitle').text();
+
+
       if($(this).hasClass('green')){
           
               $(this).removeClass('green');
@@ -30,6 +33,7 @@ var main = function() {
                 $(this).attr('value', 'Add to Basket');
               counter--;
               $('.basketcounter').text(counter);
+              $('li').find(basketProduct).remove();
       }else{
 
 
@@ -38,6 +42,7 @@ var main = function() {
               counter++;
               $('.basketcounter').addClass('badge');
               $('.basketcounter').text(counter);
+              $('<li>').text(basketProduct).appendTo('.BasketBar');
 
       }
 
@@ -55,6 +60,45 @@ var main = function() {
 
  var reviewCheck = 0;
 
+$('.postbutton').click(function() {
+
+  var postLength = $('.status-box').val().length;
+
+     if(reviewCheck == 0 && postLength > 0){
+
+      var post = $('.status-box').val();
+      $('<li>').text(post).prependTo('.posts');
+      $('.status-box').val('Thankyou for your review');
+      reviewCheck++;
+
+        }
+
+        else if (reviewCheck > 0){
+
+            alert("Sorry, only one review per customer");
+
+        } else if (postLength == 0) {
+
+
+            alert("Please enter a review before pressing the post button.");
+
+        }
+
+      });
+
+
+ $('.none').click(function() {
+    $('.menu').animate({right: "0px"}, 200);
+
+  });
+
+   $('.icon-close').click(function() {
+    $('.menu').animate({
+      right: "-285px"
+    }, 200);
+
+  
+  });
 
 }
 

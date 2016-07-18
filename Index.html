@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 
@@ -30,12 +31,25 @@
             </div>
 	</div>
 
-    <nav class="col-sm-8 text-right">
-  
-   	 	<p id="account">Account</p>
-   	 	<p id="basket">Basket</p>
-  		</nav>
-</div>
+       <nav class="col-sm-8 text-right">
+ <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Account<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Special Offers</a></li>
+              <li><a href="#">Messages</a></li>
+            </ul>
+          </li>
+          <li class="none">
+           <li class="none"> <p class="basket">Basket</p></li>
+          <li class="none"><p class="basketcounter"></p></li>
+         
+      </li>
+    </nav>
+  </div>
+
 <div class="row">
 
    <nav class="col-sm-11 text-centre">
@@ -76,6 +90,20 @@
 
 </div>
   </header>
+
+
+
+  <div class="menu">
+      
+      
+      <div class="icon-close">
+        <img src="basketX.png">
+      </div>
+<h4 class="Bheader">Basket</h4>
+      
+      <ul class="BasketBar">
+      </ul>
+    </div>
   
   <section class="jumbotron">
   <div class="container">
@@ -163,6 +191,7 @@
   </div>
   </footer>
 
+<script src="app.js"></script>
 
 </body>
 </html>
